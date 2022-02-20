@@ -1,8 +1,6 @@
 import { getExistingWishes } from "./getExistingWishes.js";
 
-export
-
-function renderProducts(products) {
+export function renderProducts(products) {
     const productContainer = document.querySelector(".product__container");
     const wishlist = getExistingWishes();
 
@@ -12,7 +10,6 @@ function renderProducts(products) {
 
         let starClass = "fa-regular";
         const doesProductExist = wishlist.find(function(wish) {
-            console.log(wish);
 
             return parseInt(wish.id) === products[i].id;
         });

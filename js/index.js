@@ -1,9 +1,8 @@
-import { url } from "./data/settings.js"
-
 import { renderProducts } from "./utilities/productsToRender.js";
 import { wishButton } from "./utilities/wishButtons.js";
 import { errorMessage } from "./utilities/errorMessage.js";
 
+const url = "https://fakestoreapi.com/products";
 
 async function fetchProducts() {
     try {
