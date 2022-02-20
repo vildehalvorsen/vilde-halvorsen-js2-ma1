@@ -1,3 +1,5 @@
-export function errorMessage(message = "Unknown error") {
-    return `<div class="error">${message}</div>`;
+export function errorMessage(message, target) {
+    const element = document.querySelector(target);
+
+    element.innerHTML = `<div class="error">${message}</div>`;
 }
